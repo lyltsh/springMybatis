@@ -1,0 +1,2 @@
+# springMybatis
+spring and mybatis
