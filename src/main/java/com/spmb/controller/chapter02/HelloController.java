@@ -1,4 +1,4 @@
-package com.spmb.controller;
+package com.spmb.controller.chapter02;
 
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
@@ -17,7 +17,7 @@ public class HelloController implements Controller {
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
         ModelAndView mv = new ModelAndView();
         mv.addObject("message", "Hello World");
-        mv.setViewName("/WEB-INF/content/welcome.jsp");
+        mv.setViewName("welcome");
         return mv;
     }
 }
