@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>测试@ModelAttribute注释返回具体类的方法</title>
+<title>测试@ModelAttribute注释void返回值的方法</title>
 </head>
 <body>
 访问request作用范围域中的Model对象：${requestScope.user.loginname }<br>
