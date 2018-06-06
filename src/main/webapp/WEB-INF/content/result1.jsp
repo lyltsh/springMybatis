@@ -10,6 +10,10 @@
 访问request作用范围域中的model对象：${requestScope.user.loginname }<br>
 访问request作用范围域中的model对象：${requestScope.user.password }<br>
 访问request作用范围域中的model对象：${requestScope.user.username }<br>
+
+访问model request作用范围域中的model对象：${requestScope.loginname }<br>
+访问model request作用范围域中的model对象：${requestScope.password }<br>
+访问model request作用范围域中的model对象：${requestScope.username }<br>
 <br>
 </body>
 </html>

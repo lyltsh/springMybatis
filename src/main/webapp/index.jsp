@@ -11,5 +11,9 @@
 <a href="loginForm1">测试Model</a><br><br>
 <a href="loginForm2">测试ModelMap</a><br><br>
 <a href="loginForm3">测试ModelAndView</a><br><br>
+<h3>数据绑定测试</h3>
+<a href="/user/register/1">测试PathVariable</a><br><br>
+<a href="/user/requestHeader">测试requestHeader</a><br><br>
+<a href="/user/cookies">测试cookies</a><br><br>
 </body>
 </html>
