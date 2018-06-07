@@ -30,7 +30,7 @@ public class UserController {
     @RequestMapping(value = "/register", method = RequestMethod.GET)
     public String registerForm() {
         logger.info("register Get 方法调用...");
-        return "registerForm";
+        return "registerForm2";
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)
@@ -66,7 +66,7 @@ public class UserController {
     @RequestMapping(value = "/register/{id}")
     public String pathVariable(@PathVariable String id) {
         logger.info("PathVariable..." + id);
-        return "registerForm";
+        return "registerForm2";
     }
 
     @RequestMapping(value = "/requestHeader")
@@ -79,7 +79,7 @@ public class UserController {
         for (int i = 0; i < accepts.length; i++) {
             logger.info(accepts[i]);
         }
-        return "registerForm";
+        return "registerForm2";
     }
 
     @RequestMapping(value = "/cookies")
@@ -88,6 +88,6 @@ public class UserController {
     ) {
         logger.info("cookies..." + jsessionId);
 
-        return "registerForm";
+        return "registerForm2";
     }
 }

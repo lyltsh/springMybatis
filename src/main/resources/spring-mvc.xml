@@ -10,30 +10,12 @@
        http://www.springframework.org/schema/mvc
        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <mvc:annotation-driven/>
+    <!--<mvc:annotation-driven/>-->
 
     <context:component-scan base-package="com.spmb.controller"/>
 
     <!--配置handler，映射hello请求-->
     <bean name="/hello" class="com.spmb.controller.chapter02.HelloController" />
-
-    <!-- 处理映射器将bean的name作为url进行查找，需要在配置Handle时指定name（即url） -->
-    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
-
-    <!-- SimpleControllerHandlerAdapter是一个处理器适配器，所有处理适配器都要实现 HandlerAdapter接口-->
-    <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
-
-    <!-- 视图解析器 -->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <!--前缀-->
-        <property name="prefix">
-            <value>/WEB-INF/content/</value>
-        </property>
-        <!--后缀-->
-        <property name="suffix">
-            <value>.jsp</value>
-        </property>
-    </bean>
 
     <!-- 静态资源的处理 -->
     <mvc:default-servlet-handler />
