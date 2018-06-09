@@ -38,7 +38,7 @@ public class UserController06 {
     public String register(@ModelAttribute User user, Model model){
         logger.info(user);
         model.addAttribute("user", user);
-        return "success";
+        return "success3";
     }
 
     @InitBinder
